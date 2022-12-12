@@ -1,55 +1,127 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Registration Page  
-        </title>  
-    </head>  
-<body bgcolor="white">  
-<br>  
-<br>  
-<form>  
+<head>
+
+<style>
+body{
+  background-color: whitesmoke;
+}
+.container ;
+    padding: 50px;
+  background-color: lightblue;
+}
+
+input[type=text], input[type=password], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: orange;
+  outline: none;
+}
+ div {
+            padding: 10px 0;
+         }
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<form>
+  <div class="container">
+  <center>  <h1> Student Registeration Form</h1> </center>
+  <hr>
   
-<label> Firstname </label>         
-<input type="text" name="firstname" size="15"/> <br> <br>  
-<label> Middlename: </label>     
-<input type="text" name="middlename" size="15"/> <br> <br>  
-<label> Lastname: </label>         
-<input type="text" name="lastname" size="15"/> <br> <br>  
+ <div><label> F name </label> 
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required /> <br>
+</div>
+<div>
+<label> M name: </label> 
+<input type="text" name="middlename" placeholder="Middlename" size="15" required /> <br>
+</div>
+<div>
+<label> L name: </label>  
+<input type="text" name="lastname" placeholder="Lastname" size="15"required /> <br>
+</div>
+<div>
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div>
+    <label for="exampleInputEmail1" class="form-label">Aadhar</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   
-<label>   
-Course :  
-</label> 
-  
-<br>  
-<br>  
-<label>   
-Gender :  
-</label><br>  
-<input type="radio" name="male"/> Male <br>  
-<input type="radio" name="female"/> Female <br>  
-<input type="radio" name="other"/> Other  
-<br>  
-<br>  
-  
-<label>   
-Phone :  
-</label>  
-<input type="text" name="country code"  value="+91" size="2"/>   
-<input type="text" name="phone" size="10"/> <br> <br>  
-Address  
-<br>  
-<textarea cols="80" rows="5" value="address">  
-</textarea>  
-<br> <br>  
-Email:  
-<input type="email" id="email" name="email"/> <br>    
-<br> <br>  
-Password:  
-<input type="Password" id="pass" name="pass"> <br>   
-<br> <br>  
-Re-type password:  
-<input type="Password" id="repass" name="repass"> <br> <br>  
-<input type="button" value="Submit"/>  
-</form>  
-</body>  
-</html>  
+      <label for="formFile" class="form-label"></label>
+      <input class="form-control" type="file" id="formFile">
+    
+  </div>
+  <div>
+    <label for="exampleInputEmail1" class="form-label">Pan card</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="formFile" class="form-label"></label>
+      <input class="form-control" type="file" id="formFile">
+    
+  </div>
+
+</div>
+<div>
+  <label> 
+    Phone :
+    </label>
+    <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/> 
+    <input type="text" name="phone" placeholder="phone no." size="10"/ required> 
+</div>
+<div>
+<label> 
+Gender :
+</label><br>
+<input type="radio" value="Male" name="gender" checked > Male 
+<input type="radio" value="Female" name="gender"> Female 
+<input type="radio" value="Other" name="gender"> Other
+
+</div>
+
+<div class="container">
+  <label>Educational details</label>
+<div><label>SSC</label>
+    <input type="number" name="SSC" placeholder= "PERCENTAGE" size="15" required />  <label for="formFile" class="form-label"></label>
+    <input class="form-control" type="file" id="formFile"><br>
+    <label> school name</label><input type="TEXT" name="SSC" placeholder= "NAME" size="15" required /> 
+    </div>
+</div>
+<div><label>INTER</label>
+  <input type="number" name="SSC" placeholder= "PERCENTAGE"size="15" required /> <label for="formFile" class="form-label"></label>
+  <input class="form-control" type="file" id="formFile"> <br>
+  <label> college name</label> <input type="TEXT" name="SSC" placeholder= "NAME" size="15" required /> 
+  </div>
+</div>
+<div><label>GRADUATION</label>
+  <input type="number" name="SSC" placeholder= "PERCENTAGE" size="15" required /> <label for="formFile" class="form-label"></label>
+  <input class="form-control" type="file" id="formFile"> <br>
+  <label>institute name</label> <input type="TEXT" name="SSC" placeholder= "NAME" size="15" required /> 
+  </div>
+</div>
+<div><label>captcha</label></div>
+<input type="number" name="captcha" placeholder= "number" size="5" required /> 
+<div class="row" > 
+  <button type="submit" class="btn btn-outline-primary">Submit</button>
+</div>
