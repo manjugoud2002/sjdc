@@ -1,8 +1,0 @@
-function add(){
-    let x;
-    let y;
-    x=5;
-    y=10;
-    let z=x+y;
-    document.getElementById('addition').innerHTML=z
-}
