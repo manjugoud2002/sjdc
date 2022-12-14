@@ -3,33 +3,34 @@
     <head>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/resume.js"></script>
     </head>
     <body>
         <img src="file:///C:/Users/user34/Desktop/1615311169963.jfif" align="right" width=80 height=80>
         <h2><center>HABIB IT SOLUTIONS</center></h2>
         <div class="container">
             <div class="row">
-                <div class="col" id="first col">
-                    <div class="row" id="firstrow">
+                <div class="col">
+                    <div class="row">
                         <form class="row g-3 needs-validation" novalidate>
                             <div class="col-md-4">
-                              <label for="validationCustom01" class="form-label"><b>First name</b></label>
-                              <input type="text" class="form-control" id="validationCustom01" value="" required>
+                              <label for="validationCustom01" class="form-label"><b>firstname</b></label>
+                              <input type="text" id="firstname" class="form-control" id="validationCustom01" value="" required>
                               <div class="valid-feedback">
                                 Looks good!
                               </div>
                             </div>
                             <div class="col-md-4">
-                              <label for="validationCustom02" class="form-label"><b>Middle name</b></label>
-                              <input type="text" class="form-control" id="validationCustom02" value="" required>
+                              <label for="validationCustom02" class="form-label"><b>middlename</b></label>
+                              <input type="text" id="middlename" class="form-control" id="validationCustom02" value="" required>
                               <div class="valid-feedback">
                                 Looks good!
                               </div>
                             </div>
                             <div class="col-md-4">
-                              <label for="validationCustomUsername" class="form-label"><b>Last name</b></label>
+                              <label for="validationCustomUsername" class="form-label"><b>lastname</b></label>
                               <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                <input type="text" id="lastname" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                                 <div class="invalid-feedback">
                                   Please choose a username.
                                 </div>
@@ -94,8 +95,8 @@
                                         </tr>
                                     </table>
                                 </div>
-                                    <div class="Resume">
-                                        <label for="formFile" class="form-label"><b>Resume</b></label>
+                                    <div class="resume">
+                                        <label for="formFile" class="form-label"><b>resume</b></label>
                                         <input class="form-control" type="file" id="formFile">
                                       </div>
                                       <div class="pancard">
@@ -103,7 +104,7 @@
                                         <input class="form-control" type="file" id="formFile">
                                       </div>
                                 <div class="button">
-                                    <a class="btn btn-primary" href="#" role="button">Submit</a>
+                                    <a class="btn btn-primary" onclick="resume()" type="submit">Submit</a>
                                 </div>
 
                           </form>
@@ -111,6 +112,69 @@
                 </div>
             </div>
         </div>
+        <div class="container" id="resume">
+          <img src="/users/habiballadin/documents/company/company/appstor.PNG" height="150px" width="150px" align="right" alt="habib it solution">
+<center><h2>MY Resume</h2></center>
+<b id="name">name</b><br>
+<b id="email">email</b><br>
+<u id="phone no">number</u>
+<hr>
+<h2>Objective</h2>
+<p>A growth oriented challenging position the field of software design, development and implementation wherein my knowledge and communcation skills can be best utilized and enriched promoting growth of self and the organzation</p>
+<hr>
+<h2>Education Qualificaion</h2>
+<table>
+<tr>
+<th>Course</th>
+<th>Institution</th>
+<th>Percentage</th>
+<th>Year of passing</th>
+</tr>
+<tr>
+<td>B.com</td>
+<td>St.Joseph's Degree College</td>
+<td>80%</td>
+<td>2023</td>
+</tr>
+<tr>
+<td>MPC</td>
+<td> Sri Chaitanya jr college</td>
+<td>85%</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>SSC</td>
+<td>St.Mary's High School</td>
+<td>85%</td>
+<td>2018</td>
+</tr>
+</table>
+<hr>
+<h2>Technical Skills</h2>
+<ul>
+<li>Web Technologies:HTML</li>
+<li>Java </li>
+<li>Datebase:Basic html,SQL,</li>
+</ul>
+<hr>
+<h2>Personal Details</h2>
+<P>Father Name:A.Nageswara Rao Goud<br>
+DOB:5-11-2002<br>
+Hobbies:Reading Books<br>
+Address:1-158,80-Bannur(v),Kurnool(dist).</p>
+<hr>
+<h2>Declaration</h2>
+<p>I declare that the above information is true upto my knowledge</p>
+<hr>
+<h5>Place:Kurnool</h5>
+<h5>Date:11-12-2023</h5>
+<h5>Signature</h5>
+<b>A.Manjunatha Goud</b>
+</div>
+
 
     </body>
 </html>
+
+      
+
