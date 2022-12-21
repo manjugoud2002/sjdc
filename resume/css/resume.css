@@ -1,0 +1,57 @@
+
+#row1{
+    background:aqua;
+    HEIGHT:200PX;
+    margin-top:50px;
+
+}
+#col1{
+    background:blanchedalmond;
+    HEIGHT:2300PX;
+    margin-left:24px;
+}
+#img1{
+    border-radius:100px;
+    height:150px;
+    width:150px;
+    margin-left:20px;
+}
+#p1{
+    margin-top:100px;
+
+}
+#p2{
+    margin-top: 500px;
+}
+#p3{
+    margin-left: 20px;
+    margin-top:50px;
+
+}
+#p4{
+    margin-left: 20px;
+    margin-top:100px;
+
+
+}
+
+#p5{
+    margin-left: 20px;
+    margin-top:400px;
+
+
+}
+
+#p6{
+    margin-left: 20px;
+    margin-top:600px;
+
+
+}
+
+#p7{
+    margin-left: 20px;
+    margin-top:800px;
+
+
+}
